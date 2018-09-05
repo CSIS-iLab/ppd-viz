@@ -13,7 +13,7 @@ $(function() {
     },
     // Chart Title and Subtitle
     title: {
-      text: "Projected Global Displacement Scenarios By Millions of People"
+      text: "Projected Global Displacement Scenarios By Millions Of People"
     },
     subtitle: {
       text: "Click and drag to zoom in"
