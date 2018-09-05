@@ -22,12 +22,12 @@ $(function() {
     credits: {
       enabled: true,
       href: false,
-      text: "CSIS Special Task Force on the Global Migration Crisis | Source: NAME"
+      text: "CSIS Special Task Force on the Global Migration Crisis"
     },
     // Chart Legend
     legend: {
       title: {
-        text: 'Legend Title<br/><span style="font-size: 12px; color: #808080; font-weight: normal">(Click to hide)</span>'
+        text: 'Percentage Changes <br/><span style="font-size: 12px; color: #808080; font-weight: normal">(Click to hide)</span>'
       },
       align: 'center',
       verticalAlign: 'bottom',
@@ -36,7 +36,7 @@ $(function() {
     // Y Axis
     yAxis: {
       title: {
-        text: "Y Axis Title"
+        text: "Millions of People"
       }
     },
     // Additional Plot Options
