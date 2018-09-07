@@ -38,7 +38,7 @@ let spline = new Highcharts.Chart({
     },
     tooltip: {
         valueDecimals: 0,
-        pointFormat: "{point.y:,.0f} million"
+        pointFormat: "{point.y:,.0f}"
     },
     plotOptions: {
         spline: {
