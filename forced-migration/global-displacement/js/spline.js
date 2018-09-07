@@ -36,9 +36,10 @@ let spline = new Highcharts.Chart({
             text: "Millions of People"
         }
     },
-    // tooltip: {
-    //     // valueDecimals: 0
-    // },
+    tooltip: {
+        valueDecimals: 0,
+        pointFormat: "{point.y:,.0f} million"
+    },
     plotOptions: {
         spline: {
             marker: {
