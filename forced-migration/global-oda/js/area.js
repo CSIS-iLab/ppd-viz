@@ -1,5 +1,4 @@
-$(function() {
-  $('#hcContainer').highcharts({
+Highcharts.chart('hcContainer', {
     data: {
       googleSpreadsheetKey: '1P-JsP2LcKwqkTzKtyqmpQGkALbLg3Q59hiI_xZ9jeXw',
       googleSpreadsheetWorksheet: 1
@@ -8,7 +7,7 @@ $(function() {
       zoomType: 'x',
       type: 'area'
     },
-    ['#4D6E79', '#303D43', '#907561', '#781F30', '#EC382A', '#61884D', '#C9AC4D', '#52496D', '#5AA992', '#887295', '#2576CE', '#aa266a'],
+    color: ['#4D6E79', '#303D43', '#907561', '#781F30', '#EC382A', '#61884D', '#C9AC4D', '#52496D', '#5AA992', '#887295', '#2576CE', '#aa266a'],
     title: {
       text: "Global ODA Spending By Category"
     },
@@ -18,7 +17,7 @@ $(function() {
     credits: {
       enabled: true,
       href: false,
-      text: "CSIS Special Task Force on the Global Forced Migration Crisis | Source: NAME"
+      text: "CSIS Special Task Force on the Global Forced Migration Crisis"
     },
     legend: {
       title: {
@@ -28,20 +27,27 @@ $(function() {
       verticalAlign: 'bottom',
       layout: 'horizontal'
     },
+    xAxis: {
+        allowDecimals: false
+    },
     yAxis: {
       title: {
         text: "Billions of Dollars"
       },
     },
+    tooltip: {
+       valueDecimals: 0,
+       pointFormat: "{point.y:,.0f}"
+    },
     plotOptions:
     {
       area: {
-        stacking: "normal", 
+        stacking: "normal",
         marker: {
           enabled: false,
           symbol: "circle"
         }
       }
     }
-  });
-});
+
+})
