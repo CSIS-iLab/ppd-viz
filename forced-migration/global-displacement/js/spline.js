@@ -1,5 +1,4 @@
-let hcContainer = document.getElementById('#hcContainer')
-let spline = new Highcharts.Chart({
+Highcharts.chart('hcContainer', {
     data: {
         googleSpreadsheetKey: '1x48glCS0NQfb-UboZk9gRme01Tb76r-VYCvY-VJVw3k',
         googleSpreadsheetWorksheet: 1
