@@ -32,7 +32,7 @@ Highcharts.chart('hcContainer', {
     },
     yAxis: {
         title: {
-            text: "Millions of People"
+            text: null
         }
     },
     tooltip: {
