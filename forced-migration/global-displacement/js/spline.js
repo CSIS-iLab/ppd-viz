@@ -33,7 +33,9 @@ Highcharts.chart('hcContainer', {
     yAxis: {
         title: {
             text: null
-        }
+        },
+        min: 0,
+        endOnTick: false
     },
     tooltip: {
         valueDecimals: 0,

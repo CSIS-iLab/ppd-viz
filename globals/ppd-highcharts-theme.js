@@ -20,24 +20,17 @@ Highcharts.theme = {
     '#5B997DV'
   ],
   chart: {
-    backgroundColor: null,
+    backgroundColor: 'none',
     border: 'none',
     color: '#0F1518',
     style: {
       fontFamily: 'proxima-nova',
     }
   },
-  labels: {
-    style: {
-        // color: '#666',
-        fontSize: '14px',
-        // fontFamily: '"expo-serif-pro",serif'
-    },
-  },
   title: {
     style: {
       color: '#0F1518',
-      font: '70px',
+      fontSize: '25px',
       textTransform: 'uppercase',
       fontWeight: 'bold'
     }
@@ -46,13 +39,17 @@ Highcharts.theme = {
     style: {
       fontSize: "13px",
     },
-    headerFormat: "<span style=\"font-size: 13px;text-align:center;margin-bottom: 5px;font-weight: bold;font-family: 'Source Sans Pro', arial, sans-serif;\">{point.key}</span><br/>"
+    headerFormat: "<span style=\"font-size: 13px;text-align:center;margin-bottom: 5px;font-weight: bold;\">{point.key}</span><br/>"
   },
   xAxis: {
-    tickLength: 0
+    tickLength: 0,
+    // labels: {
+    //
+    // }
   },
   yAxis: {
-    gridLineDashStyle: 'longdash'
+    gridLineDashStyle: 'longdash',
+    showFirstLabel: false
   }
 }
 
