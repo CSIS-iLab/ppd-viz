@@ -35,6 +35,12 @@ Highcharts.theme = {
       fontWeight: 'bold'
     }
   },
+  credits: {
+    style: {
+      cursor: "default",
+      fontSize: '10px'
+    }
+  },
   tooltip: {
     style: {
       fontSize: "13px",
@@ -43,14 +49,32 @@ Highcharts.theme = {
   },
   xAxis: {
     tickLength: 0,
-    // labels: {
-    //
-    // }
+    lineColor: '#0F1518'
   },
   yAxis: {
     gridLineDashStyle: 'longdash',
-    showFirstLabel: false
-  }
+    gridLineColor: '#0F1518',
+    showFirstLabel: false,
+    title: {
+        style: {
+            color: '#0F1518',
+            textTransform: 'uppercase'
+        }
+    }
+  },
+  legend: {
+    title: {
+      text: null
+    },
+    itemStyle: {
+      color: '#0F1518',
+      fontSize: '14px',
+      textOverflow: null,
+      fontWeight: 'normal'
+    },
+    margin: 30
+  },
+
 }
 
 Highcharts.setOptions(Highcharts.theme);
