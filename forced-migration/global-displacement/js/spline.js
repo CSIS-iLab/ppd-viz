@@ -50,7 +50,7 @@ Highcharts.chart('hcContainer', {
   },
   tooltip: {
     valueDecimals: 0,
-    pointFormat: "{point.y:,.0f}"
+    pointFormat: "{point.y:,.0f} People"
   },
   plotOptions: {
     spline: {
